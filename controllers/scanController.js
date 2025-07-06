@@ -71,7 +71,7 @@ exports.getMyScans = async (req, res) => {
       .sort({ createdAt: -1 });
     res
       .status(200)
-      .json({ message: "Here's The All Scans", data: scans });
+      .json({ message: "Here's Your Scans", data: scans });
   } catch (error) {
     res.status(500).json(err);
   }
